@@ -1,0 +1,274 @@
+*,
+*::after,
+*::before{
+ box-sizing: border-box;
+}
+
+body{
+ font-family: 'Noto Sans', sans-serif;
+ font-size: 14px;
+ line-height: 19px;
+ font-weight: 400;
+ color: #949494;
+ background-color: #000;
+}
+
+.container{
+  max-width: 1220px;
+  /* padding: 0 10px; */
+  margin: 0 55px;
+}
+
+.header{
+ position: absolute;
+ width: 100%;
+}
+
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.menu__list{
+  display: flex;
+}
+
+.menu__item{
+  margin: 0 15px;
+}
+ 
+.menu__list-link{
+ text-transform: uppercase;
+ color: #fefefe;
+ font-size: 18px;
+ line-height: 21px;
+ padding-bottom: 5px;
+ transition: all .5s;
+ border-bottom: 1px solid transparent;
+}
+
+.menu__list-link:hover{
+  border-bottom: 1px solid #fefefe;
+}
+
+.phone{
+ color: #fefefe;
+ font-size: 18px;
+ line-height: 21px;
+}
+ 
+
+a{
+ color: inherit;
+ text-decoration: none;
+}
+
+ul{
+ list-style: none;
+}
+
+.title{
+ font-weight: 700;
+ font-size: 24px;
+ line-height: 33px;
+ color: #949494;
+ margin-bottom: 40px;
+ text-transform: uppercase;
+}
+
+.top{
+ background-image: url(../Images/background.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ height: 100vh;
+ color: #fff;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 0 10px 38px;
+}
+
+.social{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-top: 40vh;
+}
+
+.social__item{
+ padding: 0 10px;
+ transition: color .5s;
+}
+
+.social__path{
+  transition: fill box-shadow .5s;
+}
+
+.social__link:hover .social__path{
+  fill: #0400ffe0;
+}
+
+.about{
+ margin-top: 150px;
+ margin-bottom: 150px;
+}
+
+.about__inner{
+ display: flex;
+ justify-content: space-between;
+}
+
+.about__content{
+ flex-basis: 585px;
+}
+
+.about__box{
+ margin-bottom: 15px;
+}
+
+.about__box-title{
+ font-weight: 700;
+ font-style: 18px;
+ line-height: 25px;
+ margin-bottom: 10px;
+}
+
+.about__img{
+ object-fit: cover;
+}
+
+.carousel {
+  margin-bottom: 100px;
+ }
+ 
+ .carousel__inner {
+  margin: 0 -7px;
+ }
+ 
+ .carousel__item {
+  margin: 0 7px;
+ }
+ 
+ .carousel__item-box {
+  border: 1px solid #c4c4c4;
+  padding: 6px 6px 16px 6px;
+ }
+ 
+ .carousel__item-box:hover {
+  color:#fff;
+  background-color: #0400ffe0;
+  border-color: #0400ffe0;
+  box-shadow: 0 0 15px #0400ffe0;
+ }
+ 
+ .carousel__item-img {
+  max-width: 100%;
+  margin-bottom: 23px;
+ }
+ 
+ .carousel__item-title {
+ font-weight: 300;
+ margin-bottom: 10px;
+ }
+
+ .carousel__item-text{
+   height: 95px;
+ }
+ 
+ .carousel .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  list-style: none;
+ }
+ 
+ .carousel .slick-dots button{
+  font-size: 0;
+  border: none;
+  padding: 0;
+  margin: 0 10px;
+  background-color: #c4c4c4;
+  width: 50px;
+  height: 1px;
+ }
+ 
+ .carousel .slick-active button{
+  background-color: #0400ffe0;
+  height: 3px;
+ }
+ 
+.benefits{
+ margin-bottom: 150px;
+}
+
+.benefits__content{
+ margin-left: 70px;
+}
+
+.benefits__inner{
+ display: flex;
+ justify-content: space-between;
+}
+
+.benefits__list{
+list-style: none;
+counter-reset: number;
+}
+
+.benefits__list-item{
+counter-increment: number;
+margin-bottom: 30px;
+}
+
+.benefits__list-item::before{
+content: '0' counter(number);
+margin-bottom: 11px;
+color: #868585;
+}
+
+.benefits__list-item:nth-child(n + 10)::before{
+ content: counter(number);
+}
+
+.benefits__list-title{
+margin-bottom: 2px;
+font-size: 18px;
+line-height: 25px;
+font-weight: 700;
+}
+
+.benefits__images{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.benefits__img{
+ object-fit: cover;
+ flex-basis: 450px;
+}
+
+.footer{
+ background-image: url(../Images/background1.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ padding: 20px 0 10px;
+ color: #fff;
+}
+
+.footer__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  height: 100px;
+  width: 100%;
+}
+
+.social__footer{
+  padding-top:0;
+}
