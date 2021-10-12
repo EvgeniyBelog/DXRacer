@@ -22,17 +22,3 @@ $('.carousel__inner').slick({
 })
 
 });
-
-function showInput(evt){
-
-evt.preventDefault(); 
-  
- let name = document.getElementById('name');
- let phone = document.getElementById('phone');
-
- if (!name.value || !phone.value) alert('Enter Name and Phone');
-    else alert("your name and phone: " + name.value + "and " + phone.value);
-
-};
-
-document.querySelector('.contacts__button').addEventListener('click', showInput)
